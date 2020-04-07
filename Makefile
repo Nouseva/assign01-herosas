@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 #	Assignment:
-#		Assign 01
-#		CSE 130, cat
+#		Assign 00
+#		CSE 130, dog
 #
 #.PHONY: all test clean check submit checkSubmission format lex
 #	Description:
@@ -25,7 +25,7 @@
 #	Original makefile from unbuntu forum
 #------------------------------------------------------------------------------
 
-APP      = PrintData.out
+APP      = dog
 
 SRCEXT   = c
 SRCDIR   = lib
@@ -38,7 +38,7 @@ OBJS    := $(patsubst %.$(SRCEXT),$(OBJDIR)/%.o,$(SRCS))
 
 DEBUG    = -g
 INCLUDES = -I./inc
-CFLAGS   = -Wall -pedantic -ansi -c $(DEBUG) $(INCLUDES)
+CFLAGS   = -Wall -Wextra -Wpedantic -Wshadow -ansi -c $(DEBUG) $(INCLUDES)
 LDFLAGS  =
 
 ifeq ($(SRCEXT), cpp)

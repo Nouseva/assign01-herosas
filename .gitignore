@@ -53,3 +53,5 @@ dkms.conf
 
 # Intrem files
 *.swp
+bin/
+obj/
